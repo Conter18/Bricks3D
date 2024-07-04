@@ -3,7 +3,7 @@ from Objects.Base3DObjects import *
 # Plays the intro animation when starting the game, it is defaulted at 20 seconds
 class Intro():
     def __init__(self):
-        self.animationEnd = 1.0
+        self.animationEnd = 2.0
         self.animationTime = 0.0
         self.animationFinished = False
 

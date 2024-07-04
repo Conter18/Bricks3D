@@ -27,11 +27,24 @@ def options():
 
         SCREEN.fill("white")
 
-        OPTIONS_TEXT = get_font(20).render("This is the OPTIONS screen.", True, "Black")
-        OPTIONS_RECT = OPTIONS_TEXT.get_rect(center=(400, 200))
+        OPTIONS_TEXT = get_font(50).render("how to play.", True, "Black")
+        OPTIONS_RECT = OPTIONS_TEXT.get_rect(center=(400, 100))
         SCREEN.blit(OPTIONS_TEXT, OPTIONS_RECT)
 
-        OPTIONS_BACK = Button(image=None, pos=(400, 400), 
+        instructions  = [
+            "Use the arrow keys to move the paddle",
+            "-> right  <- left",
+            "Press \"P\" to pause the game",
+            "Press \"M\" to mute the music"
+        ]
+        y_offset = 200
+        for lines in instructions:
+            INSTRUCTIONS_TEXT2 = get_font(11).render(lines, True, "Black")
+            INSTRUCTIONS_RECT2 = INSTRUCTIONS_TEXT2.get_rect(center=(400, y_offset))
+            SCREEN.blit(INSTRUCTIONS_TEXT2, INSTRUCTIONS_RECT2)
+            y_offset +=50
+
+        OPTIONS_BACK = Button(image=None, pos=(400, 500), 
                             text_input="BACK", font=get_font(75), base_color="Black", hovering_color="Green")
 
         OPTIONS_BACK.changeColor(OPTIONS_MOUSE_POS)
@@ -53,13 +66,13 @@ def main_menu():
 
         MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-        MENU_TEXT = get_font(80).render("MAIN MENU", True, "#b68f40")
+        MENU_TEXT = get_font(80).render("Game Menu", True, "#b68f40")
         MENU_RECT = MENU_TEXT.get_rect(center=(400, 100))
 
         PLAY_BUTTON = Button(image=pygame.image.load("assets/Play Rect.png"), pos=(400, 200), 
                             text_input="PLAY", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
         OPTIONS_BUTTON = Button(image=pygame.image.load("assets/Options Rect.png"), pos=(400, 300), 
-                            text_input="OPTIONS", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="how to play", font=get_font(50), base_color="#d7fcd4", hovering_color="White")
         QUIT_BUTTON = Button(image=pygame.image.load("assets/Quit Rect.png"), pos=(400, 400), 
                             text_input="QUIT", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
 

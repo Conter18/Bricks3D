@@ -1,6 +1,7 @@
 from Objects.Base3DObjects import *
 from ojb_3D_loading import *
 import random 
+import pygame as pg
 
 # Typical brick in the game, inherits the cube class
 class Brick(Cube):
@@ -12,6 +13,8 @@ class Brick(Cube):
         self.l = 1
         self.color = color
         self.collided = False
+
+        self.pelo = pg.mixer.Sound('souns/PopPop.mp3')
 
         self.corner_1 = Point(self.pos.x - self.w / 2, self.pos.y - self.h /2, 0)
         self.corner_2 = Point(self.pos.x - self.w / 2, self.pos.y + self.h /2, 0)
@@ -34,6 +37,7 @@ class Brick(Cube):
         model_matrix.pop_matrix()
         
     def collision(self, ball, delta_time):
+        
         # Optimize to only check the sides facing the ball
         sidesToCheck = []
         if ball.pos.x < self.pos.x:
@@ -61,6 +65,7 @@ class Brick(Cube):
             if ball.collided:
                 self.collided = True
                 ball.collided = False
+                
                 return ball
         return ball
         

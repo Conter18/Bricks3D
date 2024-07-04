@@ -1,7 +1,11 @@
 from Objects.Game3DObjects import *
+import pygame as pg
+
+
 
 # A basic brick that is hitable, used as a base for game bricks
 class HitBrick(Brick):
+    
     def __init__(self, position, width, height, textures, color, maxHit):
         super().__init__(position, width, height, color)
         self.maxHit = maxHit
@@ -14,21 +18,16 @@ class HitBrick(Brick):
 
     # Updates the current number of hits
     def update(self):
+        self.pop = pg.mixer.Sound('souns/pop.mp3')
         if self.collided:
             self.collided = False
             self.currentHits += 1
             if self.currentHits >= self.maxHit:
+                self.pop.play()
                 self.destroy = True
-
-    # Update function for the animation when bricks are about to be destroyed
-    def updateAnimation(self, delta_time):
-        self.animationTime += delta_time
-        self.pos.z += 10.0 * self.animationDirection * delta_time
-
-    # Displays more cracks the more often the brick is hit
-    # Sets the texture depending on the amount of current hits before letting the
-    # inherited class draw itself
     def display(self, model_matrix, shader):
+        if self.destroy:
+            return
         if self.currentHits != 0:
             if self.currentHits > 3:
                 index = 2
@@ -41,7 +40,6 @@ class HitBrick(Brick):
 
         super().display(model_matrix, shader)
         shader.set_using_tex(0.0)
-
 # Next 3 classes represent the game bricks, they initialize themselves with the number of hits they can take,
 # else they use the inherited class
 class OneHitBrick(HitBrick):
