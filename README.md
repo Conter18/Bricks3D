@@ -88,6 +88,11 @@ To download the project, run:
 ##### Pause game: *P*
 ##### Mute game: *M*
 
+## Showcase video
+Link to the video: https://www.youtube.com/watch?v=PRjFw_t8N-g
+
+[![Bricks3D](https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=PRjFw_t8N-g)
+
 ## Documentation:
 #### [Documentation](Documentation/Documentation.pdf)
 
