@@ -83,7 +83,7 @@ class Ball(Sphere):
         self.shot = False
         self.motion = Vector(0,0,0)
         self.collided = False
-        self.speed = 10
+        self.speed = 20
 
     # Resets the ball between stages or losing
     def reset(self, point):

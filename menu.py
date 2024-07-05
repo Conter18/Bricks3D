@@ -35,7 +35,8 @@ def options():
             "Use the arrow keys to move the paddle",
             "-> right  <- left",
             "Press \"P\" to pause the game",
-            "Press \"M\" to mute the music"
+            "Press \"M\" to mute the music", 
+            "Press \"ESPACE BAR\" to start"
         ]
         y_offset = 200
         for lines in instructions:
