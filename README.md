@@ -34,9 +34,9 @@ BRICKS3D/
 │   ├── Game3DObjects.py
 │   └── GameBricks.py
 │ 
-├── Sounds
+├── sounds
 │   ├── bones.mp3
-│   ├── melodi.mp3
+│   ├── melody.mp3
 │   ├── pop.mp3
 │   └── PopPop.mp3
 │
@@ -78,7 +78,7 @@ To download the project, run:
  pip install -r requirements.txt
  ```
  Then run menu.py to play
----
+
 ![](screenshots/main_menu.png)
 ![](screenshots/how_to_play.png)
 ![](screenshots/game.png)
