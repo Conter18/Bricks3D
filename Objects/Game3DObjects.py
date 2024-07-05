@@ -14,7 +14,7 @@ class Brick(Cube):
         self.color = color
         self.collided = False
 
-        self.pelo = pg.mixer.Sound('souns/PopPop.mp3')
+        self.pelo = pg.mixer.Sound('sounds/PopPop.mp3')
 
         self.corner_1 = Point(self.pos.x - self.w / 2, self.pos.y - self.h /2, 0)
         self.corner_2 = Point(self.pos.x - self.w / 2, self.pos.y + self.h /2, 0)

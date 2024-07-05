@@ -26,7 +26,7 @@ class GraphicsProgram3D:
         pygame.init() 
         pygame.display.set_mode((800,600), pygame.OPENGL|pygame.DOUBLEBUF)
 
-        self.sound = pg.mixer.Sound('souns/melodi.mp3')
+        self.sound = pg.mixer.Sound('sounds/melody.mp3')
         self.sound.play(-1)
         self.music_paused = False
 

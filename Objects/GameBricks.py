@@ -18,7 +18,7 @@ class HitBrick(Brick):
 
     # Updates the current number of hits
     def update(self):
-        self.pop = pg.mixer.Sound('souns/pop.mp3')
+        self.pop = pg.mixer.Sound('sounds/pop.mp3')
         if self.collided:
             self.collided = False
             self.currentHits += 1
