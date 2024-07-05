@@ -1,6 +1,6 @@
 
 # Bricks3D
-3D brick breaker game made using Python as a language using the OpenGL pipeline forthe graphics.
+3D brick breaker game made using Python as a language using the OpenGL pipeline for the graphics.
 
 
 
