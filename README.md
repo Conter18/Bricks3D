@@ -105,4 +105,3 @@ To download the project, run:
 ![](screenshots/how_to_play.png)
 ![](screenshots/game.png)
 ![](screenshots/game2.png)
->>>>>>> dd84cb2cd1d3c020a3a692fecf9bb6f0398b98b5
