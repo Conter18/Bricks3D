@@ -89,7 +89,7 @@ To download the project, run:
 ##### Mute game: *M*
 
 ## Documentation:
-#### [Documentation](documentation/documentation.pdf)
+#### [Documentation](Documentation/Documentation.pdf)
 
 ## Authors
 - Conde Vasconcelos Sleyter Antonio. [@Conter18](https://github.com/Conter18)
