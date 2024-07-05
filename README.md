@@ -1,15 +1,7 @@
-
 # Bricks3D
 3D brick breaker game made using Python as a language using the OpenGL pipeline for the graphics.
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> dd84cb2cd1d3c020a3a692fecf9bb6f0398b98b5
 
 ## Acknowledgements
-
  We made this project to prove our skills in 3D graphics and rendering with a low-level graphics API like OpenGL that we got from university classes, self study and tutorials. This is the final project for the Graphics Programming class. It is not a really complex game in terms of code and logics, since we wanted to overcomplicate us, but of course it complies with the requirements that were established by the teacher and yet, a bit more because we had to deal with the logic of collisions and the movement of the ball. It was challenging but fun to make this project.
 
 ## Structure
@@ -96,7 +88,6 @@ To download the project, run:
 ##### Pause game: *P*
 ##### Mute game: *M*
 
-<<<<<<< HEAD
 ## Documentation:
 #### [Documentation](documentation/documentation.pdf)
 
